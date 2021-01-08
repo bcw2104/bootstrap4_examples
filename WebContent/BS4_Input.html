@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<title>BS4_Input</title>
+</head>
+<body>
+	<div class="container" style="margin-top:50px; padding-bottom: 50px;">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<div class="card shadow">
+					<div class="card-body">
+						<form action="#" method="post">
+							<div class="form-group row">
+								<label for="a1" class="col-sm-4 text-sm-right font-weight-bold">test</label>
+								<div class="col-sm-8">
+									<input type="text" id="a1" class="form-control"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a2" class="col-sm-4 text-sm-right font-weight-bold">password</label>
+								<div class="col-sm-8">
+									<input type="password" id="a2" class="form-control"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a3" class="col-sm-4 text-sm-right font-weight-bold">text area</label>
+								<div class="col-sm-8">
+									<textarea id="a3" class="form-control" rows="5" style="resize:none"></textarea>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label class="col-sm-4 text-sm-right font-weight-bold">check box</label>
+								<div class="col-sm-8">
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="c1" value="1"/> 체크박스 1
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="c1" value="2"/> 체크박스 2
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="c1" value="3"/> 체크박스 3
+										</label>
+									</div>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label class="col-sm-4 text-sm-right font-weight-bold">check box inline</label>
+								<div class="col-sm-8">
+									<div class="form-check-inline">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="c2" value="1"/> 체크박스 1
+										</label>
+									</div>
+									<div class="form-check-inline">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="c2" value="2"/> 체크박스 2
+										</label>
+									</div>
+									<div class="form-check-inline">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="c2" value="3"/> 체크박스 3
+										</label>
+									</div>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label class="col-sm-4 text-sm-right font-weight-bold">radio</label>
+								<div class="col-sm-8">
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="r1" value="1" checked="checked"/> 라디오 1
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="r1" value="2"/> 라디오 2
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="r1" value="3"/> 라디오 3
+										</label>
+									</div>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label class="col-sm-4 text-sm-right font-weight-bold">radio</label>
+								<div class="col-sm-8">
+									<div class="form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="r2" value="1" checked="checked"/> 라디오 1
+										</label>
+									</div>
+									<div class="form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="r2" value="2"/> 라디오 2
+										</label>
+									</div>
+									<div class="form-check-inline">
+										<label class="form-check-label">
+											<input type="radio" class="form-check-input" name="r2" value="3"/> 라디오 3
+										</label>
+									</div>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a4" class="col-sm-4 text-sm-right font-weight-bold">select</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="a4">
+										<option value="1">항목1</option>
+										<option value="2">항목2</option>
+										<option value="3">항목3</option>
+									</select>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a5" class="col-sm-4 text-sm-right font-weight-bold">select multiple</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="a5" multiple="multiple">
+										<option value="1">항목1</option>
+										<option value="2">항목2</option>
+										<option value="3">항목3</option>
+									</select>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a6" class="col-sm-4 text-sm-right font-weight-bold">size small</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control form-control-sm" id="a6"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a7" class="col-sm-4 text-sm-right font-weight-bold">size default</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="a7"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a8" class="col-sm-4 text-sm-right font-weight-bold">size large</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control form-control-lg" id="a8"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a9" class="col-sm-4 text-sm-right font-weight-bold">border default</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control form-control-lg" id="a9"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a10" class="col-sm-4 text-sm-right font-weight-bold">border plain</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control-plaintext" id="a10"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a11" class="col-sm-4 text-sm-right font-weight-bold">range</label>
+								<div class="col-sm-8">
+									<input type="range" class="form-control-range" id="a11"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="form-group row">
+								<label for="a12" class="col-sm-4 text-sm-right font-weight-bold">file</label>
+								<div class="col-sm-8">
+									<input type="file" class="form-control-file border" id="a12"/>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+</body>
+</html>

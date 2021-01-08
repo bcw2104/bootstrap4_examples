@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".pp").popover();
+
+	})
+
+	function func(arg){
+			console.log(arg);
+			$(".pp").popover(arg);
+		}
+</script>
+<title>BS4_PopOver</title>
+</head>
+<body>
+	<div class="container" style="margin-top:100px">
+		<a href="#" data-toggle="popover" title="Popover Title" data-content="Popover Content" class="pp">PopOver Basic</a>
+
+		<hr/>
+
+		<div class="text-center">
+			<a href="#" data-toggle="popover" title="Popover Title" data-content="Popover Content" class="pp" data-placement="top">PopOver Top</a>
+			<br/>
+			<a href="#" data-toggle="popover" title="Popover Title" data-content="Popover Content" class="pp" data-placement="bottom">PopOver Bottom</a>
+			<br/>
+			<a href="#" data-toggle="popover" title="Popover Title" data-content="Popover Content" class="pp" data-placement="left">PopOver Left</a>
+			<br/>
+			<a href="#" data-toggle="popover" title="Popover Title" data-content="Popover Content" class="pp" data-placement="right">PopOver Right</a>
+		</div>
+
+		<hr/>
+		<a href="#" data-toggle="popover" title="Dismissable PopOver" data-content="외부를 클릭하면 사라지는 PopOver"
+			class="pp" data-placement="right" data-trigger="focus">외부 클릭</a>
+		<hr/>
+		<a href="#" data-toggle="popover" title="Hover PopOver" data-content="Hover PopOver"
+			class="pp" data-placement="right" data-trigger="hover">Hover</a>
+		<hr/>
+		<button type="button" class="btn btn-warning" onclick="func('toggle')">반전 시키기</button>
+		<button type="button" class="btn btn-primary" onclick="func('show')">모두 열기</button>
+		<button type="button" class="btn btn-danger" onclick="func('hide')">모두 닫기</button>
+	</div>
+</body>
+</html>

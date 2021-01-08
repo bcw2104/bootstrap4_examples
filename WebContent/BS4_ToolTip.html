@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<script>
+	$(function(){
+		$(".tt").tooltip();
+	})
+</script>
+<title>BS4_ToolTip</title>
+</head>
+<body>
+	<div class="container text-center" style="margin-top:100px">
+		<a href="#" title="툴팁 예제" data-toggle="tooltip" class="tt">툴팁</a>
+		<hr/>
+		<a href="#" title="좌측 툴팁 예제" data-toggle="tooltip" class="tt" data-placement="left">좌측 툴팁</a>
+		<hr/>
+		<a href="#" title="우측 툴팁 예제" data-toggle="tooltip" class="tt" data-placement="right">우측 툴팁</a>
+		<hr/>
+		<a href="#" title="하단 툴팁 예제" data-toggle="tooltip" class="tt" data-placement="bottom">하단 툴팁</a>
+	</div>
+</body>
+</html>

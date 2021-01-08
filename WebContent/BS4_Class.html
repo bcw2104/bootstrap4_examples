@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<title>BS4_Class</title>
+<style>
+	.box{
+		width:100px;
+		height:100px;
+		display: inline-block;
+	}
+
+	.box2{
+		width:100px;
+		height:100px;
+		background-color: yellow;
+	}
+
+	.box3{
+		height:30px;
+		margin-bottom:5px;
+		background-color: aqua;
+	}
+
+	.box4{
+		width:30px;
+		margin-bottom:5px;
+		background-color: aqua;
+		display: inline-block;
+	}
+
+	.border{
+		border-width: 3px !important;
+	}
+</style>
+</head>
+<body>
+	<div class="container" style="margin-top:100px">
+		<div class="box border"></div>
+		<div class="box border border-danger"></div>
+		<!-- 경계선 위치 : border-방향-0 -->
+		<div class="box border border-0 border-danger"></div>
+		<div class="box border border-top-0 border-danger"></div>
+		<div class="box border border-bottom-0 border-danger"></div>
+		<div class="box border border-left-0 border-danger"></div>
+		<div class="box border border-right-0 border-danger"></div>
+
+		<hr/>
+
+		<!-- 경계선 색상 -->
+		<div class="box border border-primary"></div>
+		<div class="box border border-secondary"></div>
+		<div class="box border border-success"></div>
+		<div class="box border border-info"></div>
+		<div class="box border border-warning"></div>
+		<div class="box border border-danger"></div>
+		<div class="box border border-dark"></div>
+		<div class="box border border-light"></div>
+		<div class="box border border-white"></div>
+
+		<hr/>
+
+		<!-- 경계선 모양 -->
+		<div class="box border border-dark rounded"></div>
+		<div class="box border border-dark rounded-top"></div>
+		<div class="box border border-dark rounded-bottom"></div>
+		<div class="box border border-dark rounded-right"></div>
+		<div class="box border border-dark rounded-left"></div>
+		<div class="box border border-dark rounded-circle"></div>
+
+		<hr/>
+
+		<!-- float -->
+		<!-- clearfix를 사용하지 않으면 아래 요소가 올라오게 된다. -->
+		<div class="clearfix">
+			<div class="box border border-dark float-left"></div>
+			<div class="box border border-dark float-right"></div>
+		</div>
+
+		<hr/>
+
+		<div class="clearfix">
+			<div class="box2 border border-dark float-sm-right"></div>
+		</div>
+		<div class="clearfix">
+			<div class="box2 border border-dark float-md-right"></div>
+		</div>
+		<div class="clearfix">
+			<div class="box2 border border-dark float-lg-right"></div>
+		</div>
+		<div class="clearfix">
+			<div class="box2 border border-dark float-xl-right"></div>
+		</div>
+		<div class="clearfix">
+			<div class="box2 border border-dark float-none-right"></div>
+		</div>
+
+		<hr/>
+
+		<!-- 길이 사이즈 -->
+		<!-- w-사이즈 : 25,50,75,100으로 설정 가능 -> 컨테이너 길이의 퍼센트 -->
+		<!-- mw-100 : 최대 가로길이 설정 -> 내부 요소길이가 컨테이너를 초과할 수 없게함 -->
+		<div class="bg-secondary" style="height:215px; padding:5px">
+			<div class="box3"></div>
+			<div class="box3 w-25"></div>
+			<div class="box3 w-50"></div>
+			<div class="box3 w-75"></div>
+			<div class="box3 w-100"></div>
+			<div class="box3 mw-100" style="width:2000px"></div>
+		</div>
+
+		<hr/>
+
+		<!-- 높이 사이즈 -->
+		<!-- h-사이즈 : 25,50,75,100으로 설정 가능 -> 컨테이너 길이의 퍼센트 -->
+		<!-- mh-100 : 최대 가로길이 설정 -> 내부 요소길이가 컨테이너를 초과할 수 없게함 -->
+		<div class="bg-secondary" style="height:215px; padding:5px">
+			<div class="box4" style="height:100%"></div>
+			<div class="box4 h-25"></div>
+			<div class="box4 h-50"></div>
+			<div class="box4 h-75"></div>
+			<div class="box4 h-100"></div>
+			<div class="box4 mh-100" style="height:2000px"></div>
+		</div>
+
+		<hr/>
+
+		<!-- 내부 여백 -->
+		<div class="box border border-danger p-3">
+			<div class="bg-warning w-100 h-100"></div>
+		</div>
+
+		<!-- p(t,b,r,l) : 방향 -->
+		<div class="box border border-danger pt-1 pr-2 pb-3 pl-4">
+			<div class="bg-warning w-100 h-100"></div>
+		</div>
+
+		<!-- px : 좌우 -->
+		<div class="box border border-danger px-2">
+			<div class="bg-warning w-100 h-100"></div>
+		</div>
+
+		<!-- py : 위아래 -->
+		<div class="box border border-danger py-2">
+			<div class="bg-warning w-100 h-100"></div>
+		</div>
+
+		<hr/>
+
+		<!-- 외부 여백 -> 내부와 사용법은 동일 -->
+		<div class="box border border-danger"></div>
+		<div class="box border border-danger m-3"></div>
+		<div class="box border border-danger"></div>
+
+		<br/>
+
+		<div class="box border border-danger"></div>
+		<div class="box border border-danger mt-1 mr-2 mb-3 ml-4"></div>
+		<div class="box border border-danger"></div>
+
+		<br/>
+
+		<div class="box border border-danger"></div>
+		<div class="box border border-danger mx-2"></div>
+		<div class="box border border-danger"></div>
+
+		<br/>
+
+		<div class="box border border-danger"></div>
+		<div class="box border border-danger my-2"></div>
+		<div class="box border border-danger"></div>
+
+		<br/>
+
+		<!-- 가운데 정렬 : 대상이 block이어야 한다. -->
+		<div class="box2 border border-danger mx-auto"></div>
+
+		<hr/>
+
+		<!-- 그림자 -->
+		<div class="box bg-warning"></div>
+		<div class="box bg-warning shadow-none"></div>
+		<div class="box bg-warning shadow-sm"></div>
+		<div class="box bg-warning shadow"></div>
+		<div class="box bg-warning shadow-lg"></div>
+
+		<hr/>
+
+		<!-- 가시성 -->
+		<div class="box bg-warning visible"></div>
+		<div class="box bg-warning invisible"></div>
+
+		<hr/>
+
+		<!-- Block요소로 만들기 -->
+		<span class="bg-info">inline</span>
+		<span class="bg-info d-block">d-block</span>
+		<span class="bg-info d-sm-block">d-sm-block</span>
+		<span class="bg-info d-md-block">d-md-block</span>
+		<span class="bg-info d-lg-block">d-lg-block</span>
+		<span class="bg-info d-xl-block">d-xl-block</span>
+
+		<hr/>
+
+	</div>
+</body>
+</html>

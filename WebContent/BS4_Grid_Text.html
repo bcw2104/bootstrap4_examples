@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<title>BS4 Grid and Text</title>
+</head>
+<body>
+	<!-- 전체 페이지 중 적정 넓이 차지  -->
+	<div class="container">
+		<h1>Bootstrap4 기본 예제</h1>
+		<p>Container</p>
+	</div>
+
+	<!-- 전체 페이지 넓이를 차지 -->
+	<div class="container-fluid">
+		<h1>Bootstrap4 기본 예제</h1>
+		<p>Container-fluid</p>
+	</div>
+
+	<div class="container">
+		<!-- 가로로 12등분 -->
+		<div class="row">
+			<!-- sm < 576px / md < 768px / lg < 992px / xl < 1200px -->
+			<div class="col-6" style="background-color:#ff0000">aaa</div>
+			<div class="col-6" style="background-color:#0000ff">bbb</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-sm-6" style="background-color:#ff0000">aaa</div>
+			<div class="col-sm-6" style="background-color:#0000ff">bbb</div>
+		</div>
+	</div>
+	<hr/>
+	<div class="container">
+		<h1>h1-40px</h1>
+		<h2>h2-32px</h2>
+		<h3>h3-28px</h3>
+		<h4>h4-24px</h4>
+		<h5>h5-20px</h5>
+		<h6>h6-16px</h6>
+		<hr/>
+	<!-- 현재 크기를 무시하고 새롭게 설정(모든 태그에 사용가능) -->
+		<h1 class="display-1">Display-1</h1>
+		<h1 class="display-2">Display-2</h1>
+		<h1 class="display-3">Display-3</h1>
+		<h1 class="display-4">Display-4</h1>
+		<hr/>
+		<h1>문자열<small>small 문자열</small></h1>
+		<p>문자열<mark>강조</mark></p>
+		<blockquote class="blockquote">
+			<p>이것은 인용구입니다.</p>
+			<footer class="blockquote-footer">인용구</footer>
+		</blockquote>
+		<p>웹 문서는 <abbr title="HyperText Markup Language">HTML</abbr>로 구성합니다.</p>
+		<dl>
+			<dt>중국요리</dt>
+			<dd>-짜장면</dd>
+			<dd>-짬뽕</dd>
+			<dd>-탕수육</dd>
+		</dl>
+		<p>HTML코드 : <code>span</code>, <code>div</code>, <code>section</code> 태그는 문서의 영역을 나타냅니다.</p>
+		<p>복사는 <kbd>ctrl+c</kbd> / 붙여넣기는 <kbd>ctrl+v</kbd>입니다.</p>
+		<pre>
+		첫번째 줄
+		두번째 줄
+		세번째 줄
+		</pre>
+		<hr/>
+		<p>기본 문자열</p>
+		<p class="font-weight-bold">굵은 문자열</p>
+		<p class="font-italic">기울어진 문자열</p>
+		<p class="font-weight-light">가는 문자열</p>
+		<hr/>
+		<p class="text-left">좌측 정렬</p>
+		<p class="text-center">중앙 정렬</p>
+		<p class="text-right">우측 정렬</p>
+		<hr/>
+		<p class="text-sm-center">sm 중앙 정렬</p>
+		<p class="text-md-center">md 중앙 정렬</p>
+		<p class="text-lg-center">lg 중앙 정렬</p>
+		<p class="text-lg-center">xl 중앙 정렬</p>
+		<hr/>
+		<p style="width:200px; border:1px solid #000000">
+			a bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiii jjjjjjjjjj
+		</p>
+		<hr/>
+		<p style="width:200px; border:1px solid #000000" class="text-justify">
+			a bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiii jjjjjjjjjj
+		</p>
+		<hr/>
+		<p style="width:200px; border:1px solid #000000" class="text-nowrap">
+			a bb ccc dddd eeeee ffffff ggggggg hhhhhhhh iiiiiiiii jjjjjjjjjj
+		</p>
+		<hr/>
+		<p>aaa bbb iii</p>
+		<p class="text-monospace">aaa bbb iii</p>
+		<p class="text-uppercase">upperCase</p>
+		<p class="text-lowercase">LOWERcASE</p>
+		<p class="text-capitalize">capitalize</p>
+
+		<hr/>
+		<p>웹 문서는 <abbr title="HyperText Markup Language">HTML</abbr>로 구성합니다.</p>
+		<p>웹 문서는 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>로 구성합니다.</p>
+
+		<hr/>
+		<ul>
+			<li>list1</li>
+			<li>list2</li>
+			<li>list3</li>
+		</ul>
+		<ul class="list-unstyled">
+			<li>list1</li>
+			<li>list2</li>
+			<li>list3</li>
+		</ul>
+
+		<ul class="list-inline">
+			<li class="list-inline-item">list1</li>
+			<li class="list-inline-item">list2</li>
+			<li>list3</li>
+		</ul>
+	</div>
+</body>
+</html>

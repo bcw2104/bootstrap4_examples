@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<title>BS4 Image</title>
+<style>
+	img{
+		width:500px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<img src="images/winter.jpeg"/>
+		<hr/>
+		<img src="images/winter.jpeg" class="rounded"/>
+		<hr/>
+		<img src="images/winter.jpeg" class="rounded-circle"/>
+		<hr/>
+		<!-- img-thumbnail: 섬네일 기능 & 페이지 크기에 따라 자동 조절 -->
+		<img src="images/winter.jpeg" class="img-thumbnail"/>
+		<hr/>
+		<img src="images/winter.jpeg" class="mx-auto d-block"/>
+		<hr/>
+		<!-- clearfix : float 원상복구 -->
+		<div class="clearfix">
+			<img src="images/winter.jpeg" class="float-left"/>
+			<img src="images/winter.jpeg" class="float-right"/>
+		</div>
+		<hr/>
+		<!-- img-fluid : 페이지 크기에 따라 자동 조절 -->
+		<img src="images/winter.jpeg" class="img-fluid"/>
+	</div>
+</body>
+</html>

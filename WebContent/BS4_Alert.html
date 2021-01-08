@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap4 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	var closeAlert = function(){
+		$("#test_alert").alert("close");
+	}
+</script>
+<title>BS4_Alert</title>
+</head>
+<body>
+	<!-- alert-color : 색상은 text와 동일 -->
+	<div class="container">
+		<div class="alert alert-success">
+			<strong>Success!</strong> Success Alert입니다.
+		</div>
+		<div class="alert alert-info">
+			<strong>Info!</strong> Info Alert입니다.
+		</div>
+		<div class="alert alert-warning">
+			<strong>Warning!</strong> Warning Alert입니다.
+		</div>
+		<div class="alert alert-danger">
+			<strong>Danger!</strong> Danger Alert입니다.
+		</div>
+		<div class="alert alert-primary">
+			<strong>Primary!</strong> Primary Alert입니다.
+		</div>
+		<hr/>
+		<div class="alert alert-info">
+			<strong>Info</strong> 기본 링크 <a href="http://google.com">Google</a>
+		</div>
+		<div class="alert alert-info">
+			<strong>Info</strong> alert-link 사용 <a class="alert-link" href="http://google.com">Google</a>
+		</div>
+		<hr/>
+			<!-- &times; : x기호 / fade + show : 애니메이션 / alert-dismissible : alert종료 활성화-->
+			<div class="alert alert-info alert-dismissible fade show" id="test_alert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Info</strong> x를 누르면 사라집니다.
+		</div>
+		<hr/>
+		<button type="button" onclick="closeAlert()">Alert 닫기</button>
+	</div>
+</body>
+</html>

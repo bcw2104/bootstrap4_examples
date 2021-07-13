@@ -1,5 +1,6 @@
-### Bootstrap4
-부트스트랩4 연습 예제 
+![ex_screenshot](./bs4.jpg)
+
+## 부트스트랩4 연습 예제 
 
 #### 예제 목록
 * BS4_Alert.html

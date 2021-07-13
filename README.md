@@ -1,4 +1,4 @@
-![ex_screenshot](./bs4.jpg)
+![ex_screenshot](./bs4.png)
 
 ## 부트스트랩4 연습 예제 
 
